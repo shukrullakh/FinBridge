@@ -68,87 +68,87 @@
 - [ ] Configure separate development and demo environment variables.
 
 ### 3.2 Backend foundation
-- [ ] Initialize FastAPI application.
-- [ ] Add configuration management and environment validation.
-- [ ] Add health-check endpoint.
+- [x] Initialize FastAPI application.
+- [x] Add configuration management and environment validation.
+- [x] Add health-check endpoint.
 - [ ] Configure PostgreSQL and migrations (if using a persistent database).
-- [ ] Define consistent API response and error formats.
-- [ ] Add request validation and structured logging.
-- [ ] Add CORS configuration for the web client.
-- [ ] Add API documentation and version prefix (for example `/api/v1`).
+- [x] Define consistent API response and error formats.
+- [x] Add request validation and structured logging.
+- [x] Add CORS configuration for the web client.
+- [x] Add API documentation and version prefix (for example `/api/v1`).
 
 ### 3.3 Frontend foundation
-- [ ] Initialize the selected web stack (recommended: React + TypeScript + Vite).
-- [ ] Configure routing.
-- [ ] Configure API client and error handling.
-- [ ] Build reusable layout, navigation, cards, forms, dialogs, and charts.
-- [ ] Add responsive breakpoints.
-- [ ] Add currency/date formatting utilities.
-- [ ] Add mock/demo data mode so the presentation does not depend on fragile external services.
+- [x] Initialize the selected web stack (recommended: React + TypeScript + Vite).
+- [x] Configure routing.
+- [x] Configure API client and error handling.
+- [x] Build reusable layout, navigation, cards, forms, dialogs, and charts.
+- [x] Add responsive breakpoints.
+- [x] Add currency/date formatting utilities.
+- [x] Add mock/demo data mode so the presentation does not depend on fragile external services.
 
 ## 4. Core MVP features
 
 ### 4.1 Dashboard
-- [ ] Show total income, expenses, and available balance for the selected period.
-- [ ] Show spending by category.
-- [ ] Show recent transactions.
-- [ ] Show savings goal progress.
-- [ ] Show debt summary and upcoming due dates.
-- [ ] Show Financial Behavior Score with a clear explanation.
-- [ ] Add date-range or monthly filtering.
-- [ ] Verify totals against backend calculation tests.
+- [x] Show total income, expenses, and available balance for the selected period.
+- [x] Show spending by category.
+- [x] Show recent transactions.
+- [x] Show savings goal progress.
+- [x] Show debt summary and upcoming due dates.
+- [x] Show Financial Behavior Score with a clear explanation.
+- [x] Add date-range or monthly filtering.
+- [x] Verify totals against backend calculation tests.
 
 ### 4.2 Transactions and spending limits
-- [ ] Define transaction fields: amount, type, category, date, note, and source.
-- [ ] Add transaction create, read, update, and delete flows if time permits.
-- [ ] Add category management or a fixed MVP category list.
-- [ ] Add user-defined spending limits / “red lines” by category.
-- [ ] Show remaining category budget.
-- [ ] Seed realistic Uzbek-market demo transactions.
+- [x] Define transaction fields: amount, type, category, date, note, and source.
+- [x] Add transaction create, read, update, and delete flows if time permits.
+- [x] Add category management or a fixed MVP category list.
+- [x] Add user-defined spending limits / “red lines” by category.
+- [x] Show remaining category budget.
+- [x] Seed realistic Uzbek-market demo transactions.
 
 ### 4.3 Smart Pause — signature feature
-- [ ] Let a user enter a planned purchase amount and category.
-- [ ] Let a user configure a category spending limit (“red line”).
-- [ ] Evaluate purchase against available budget and category limit using deterministic rules.
-- [ ] Display a clear reason when the purchase triggers a warning.
-- [ ] Offer a 15-minute cooling-off timer as a behavioral prompt (the app does not block payment).
-- [ ] Show purchase impact on the current budget and savings goal.
-- [ ] Offer reflection prompts such as “Is this necessary now?” and “Would you still want it tomorrow?”
-- [ ] Let user choose: postpone, proceed, or cancel.
-- [ ] Record the decision for later behavior analysis.
-- [ ] Add tests for threshold boundaries and unusual amounts.
-- [ ] Prepare one compelling, reproducible live-demo scenario.
+- [x] Let a user enter a planned purchase amount and category.
+- [x] Let a user configure a category spending limit (“red line”).
+- [x] Evaluate purchase against available budget and category limit using deterministic rules.
+- [x] Display a clear reason when the purchase triggers a warning.
+- [x] Offer a 15-minute cooling-off timer as a behavioral prompt (the app does not block payment).
+- [x] Show purchase impact on the current budget and savings goal.
+- [x] Offer reflection prompts such as “Is this necessary now?” and “Would you still want it tomorrow?”
+- [x] Let user choose: postpone, proceed, or cancel.
+- [x] Record the decision for later behavior analysis.
+- [x] Add tests for threshold boundaries and unusual amounts.
+- [x] Prepare one compelling, reproducible live-demo scenario.
 
 ### 4.4 Invisible Savings — simulated round-up
-- [ ] Let user create a savings goal with target amount and target date.
-- [ ] Implement round-up calculation for eligible recorded transactions.
-- [ ] Show the amount that would be moved to savings for each transaction.
-- [ ] Aggregate simulated round-ups into the savings balance.
-- [ ] Show progress, remaining amount, and estimated completion date.
-- [ ] Allow user to configure the round-up step (for example, nearest 1,000 or 5,000 UZS).
-- [ ] Clearly label this as an in-app simulation; no real money transfer occurs.
-- [ ] Test rounding, zero values, refunds, and transaction exclusions.
+- [x] Let user create a savings goal with target amount and target date.
+- [x] Implement round-up calculation for eligible recorded transactions.
+- [x] Show the amount that would be moved to savings for each transaction.
+- [x] Aggregate simulated round-ups into the savings balance.
+- [x] Show progress, remaining amount, and estimated completion date.
+- [x] Allow user to configure the round-up step (for example, nearest 1,000 or 5,000 UZS).
+- [x] Clearly label this as an in-app simulation; no real money transfer occurs.
+- [x] Test rounding, zero values, refunds, and transaction exclusions.
 
 ### 4.5 Debt Coach
-- [ ] Let user add a debt: name, principal/balance, interest rate (optional), minimum payment, due date, and type.
-- [ ] Support informal debt with no interest rate.
-- [ ] Calculate a Snowball repayment order.
-- [ ] Calculate an Avalanche repayment order when interest rates are available.
-- [ ] Compare estimated payoff time and total interest under stated assumptions.
-- [ ] Generate a month-by-month suggested repayment plan.
-- [ ] Show upcoming due dates.
-- [ ] Explain assumptions and warn that estimates depend on accurate user-entered data.
-- [ ] Test zero-interest, missing-interest, and minimum-payment edge cases.
+- [x] Let user add a debt: name, principal/balance, interest rate (optional), minimum payment, due date, and type.
+- [x] Support informal debt with no interest rate.
+- [x] Calculate a Snowball repayment order.
+- [x] Calculate an Avalanche repayment order when interest rates are available.
+- [x] Compare estimated payoff time and total interest under stated assumptions.
+- [x] Generate a month-by-month suggested repayment plan.
+- [x] Show upcoming due dates.
+- [x] Explain assumptions and warn that estimates depend on accurate user-entered data.
+- [x] Test zero-interest, missing-interest, and minimum-payment edge cases.
 
 ### 4.6 Financial Behavior Score
-- [ ] Define a transparent score model before displaying a score.
-- [ ] Use understandable dimensions: spending discipline, saving consistency, debt payment discipline, and goal progress.
-- [ ] Define data sufficiency rules; show “not enough data” instead of a misleading score.
-- [ ] Show dimension-level breakdown and plain-language explanations.
-- [ ] Show change over time only when comparable historical data exists.
-- [ ] Avoid presenting the score as a credit score, diagnosis, or measure of personal worth.
-- [ ] Add unit tests for each score component and boundary.
-- [ ] Document the formula and its limitations in the product.
+- [x] Define a transparent score model before displaying a score.
+- [x] Use understandable dimensions: spending discipline, saving consistency, debt payment discipline, and goal progress.
+- [x] Define data sufficiency rules; show “not enough data” instead of a misleading score.
+- [x] Show dimension-level breakdown and plain-language explanations.
+- [x] Show change over time only when comparable historical data exists.
+- [x] Avoid presenting the score as a credit score, diagnosis, or measure of personal worth.
+- [x] Add unit tests for each score component and boundary.
+- [x] Document the formula and its limitations in the product.
 
 ## 5. AI layer
 
@@ -182,11 +182,11 @@
 
 ## 7. Quality, privacy, and security
 
-- [ ] Add unit tests for money calculations and business rules.
-- [ ] Add API integration tests for critical flows.
+- [x] Add unit tests for money calculations and business rules.
+- [x] Add API integration tests for critical flows.
 - [ ] Add frontend form validation and error states.
-- [ ] Ensure monetary values use decimal-safe arithmetic (never binary floating-point for financial calculations).
-- [ ] Validate and normalize all user input.
+- [x] Ensure monetary values use decimal-safe arithmetic (never binary floating-point for financial calculations).
+- [x] Validate and normalize all user input.
 - [ ] Enforce user-level data access if accounts are enabled.
 - [ ] Keep secrets in environment variables.
 - [ ] Avoid logging sensitive financial details or AI prompts.
